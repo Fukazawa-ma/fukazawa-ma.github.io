@@ -92,3 +92,59 @@ header {
     max-width: 450px;
     line-height: 40px;
 }
+.skills {
+    background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
+    padding-bottom: 120px;
+}
+.skills-title {
+    color: #1A3348;
+    font-family: "Lato";
+    font-size: 64px;
+    padding-top: 52px;
+    text-align: center;
+}
+.skills-item-container {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 80px;
+    padding-top: 108px;
+    max-width: 837px;
+    margin: 0 auto;
+}
+.skills-item {
+    height: auto;
+    width: 150px;
+}
+.works {
+    padding-bottom: 110px;
+}
+.works-title {
+    color: #1A3348;
+    font-family: "Lato";
+    font-size: 64px;
+    padding-top: 52px;
+    text-align: center;
+}
+.works-item-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 32px;
+    padding-top: 108px;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.works-item {
+    padding-bottom: 50px;
+    width: calc(50% - 32px);
+}
+.works-item__title {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.works-item img {
+    width: 100%;
+}
