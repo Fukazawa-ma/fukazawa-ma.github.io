@@ -19,7 +19,76 @@ header {
 }
 .header-nav-item {
     cursor: pointer;
-    font-family: "Lato";
     color: #FFF;
     font-size: 24px;
+}
+.header-nav-item a {
+    font-family: "Lato";
+}
+.top{
+    align-items: center;
+    background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+.about {
+    padding: 72px 0;
+}
+.about-card {
+    background: #00508A;
+    border-radius: 22px;
+    color: #FFF;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 131px;
+    position: relative;
+}
+.about-card::after {
+    background: #DDDEDF;
+    border-radius: 26px;
+    content: "";
+    height: 790px;
+    position: absolute;
+    right: 54px;
+    left: -12px;
+    transform: rotate(3deg);
+    top: -10px;
+    width: 1017px;
+    z-index: -1;
+}
+.about-card__title {
+    font-family: "Lato";
+    font-size: 64px;
+    padding-top: 60px;
+    text-align: center;
+}
+.about-card-content {
+    align-items: center;
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    padding: 98px 62px 0 62px;
+}
+.about-card-content__profile {
+    text-align: center;
+}
+.about-card-content__profile--img {
+    background: #FFF;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+}
+.about-card-content__profile--img img {
+    width: 100%;
+}
+.about-card-content__profile p {
+    font-family: "Lato";
+    font-size: 32px;
+    padding-top: 36px;
+}
+.about-card-content__text {
+    font-size: 25px;
+    max-width: 450px;
+    line-height: 40px;
 }
