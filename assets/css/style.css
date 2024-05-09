@@ -24,7 +24,24 @@ header {
 }
 .header-nav-item a {
     font-family: "Lato";
+    position: relative;
 }
+.header-nav-item a::after {
+    background-color: #FFF;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    content: "";
+    position: absolute;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+    width: 100%;
+}
+.header-nav-item a:hover::after{
+    transform: scale(1,1);
+}
+
 .top{
     align-items: center;
     background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
@@ -33,7 +50,7 @@ header {
     padding: 80px 0;
 }
 #about {
-    padding: 72px 0;
+    padding: 90px 0;
 }
 .about-card {
     background: #00508A;
@@ -41,14 +58,14 @@ header {
     color: #FFF;
     max-width: 1000px;
     margin: 0 auto;
-    padding-bottom: 131px;
+    padding-bottom: 60px;
     position: relative;
 }
 .about-card::after {
     background: #DDDEDF;
     border-radius: 26px;
     content: "";
-    height: 790px;
+    height: 710px;
     position: absolute;
     right: 54px;
     left: -12px;
@@ -68,7 +85,7 @@ header {
     display: flex;
     gap: 31px;
     justify-content: center;
-    padding: 98px 62px 0 62px;
+    padding: 60px 62px 0 62px;
 }
 .about-card-content__profile {
     text-align: center;
@@ -108,14 +125,14 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
-    gap: 80px;
+    gap: 100px;
     padding-top: 108px;
-    max-width: 837px;
+    max-width: 750px;
     margin: 0 auto;
 }
 .skills-item {
     height: auto;
-    width: 150px;
+    width: 120px;
 }
 #works {
     padding-bottom: 110px;
@@ -222,6 +239,22 @@ header {
 }
 .footer-nav-item a {
     font-family: "Lato";
+    position: relative;
+}
+.footer-nav-item a::after {
+    background-color: #FFF;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    content: "";
+    position: absolute;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+    width: 100%;
+}
+.footer-nav-item a:hover::after{
+    transform: scale(1,1);
 }
 .footer-copyright {
     background: #3A3A3A;
