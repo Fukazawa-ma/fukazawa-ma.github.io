@@ -4,3 +4,8 @@ $('a[href*="#"]').click(function(){
     $('body,html').animate({scrollTop:pos},500);
     return false;
 })
+
+$('.hamburger').click(function(){
+    $(this).toggleClass("active");
+    $('#g-nav').toggleClass("navactive");
+})
