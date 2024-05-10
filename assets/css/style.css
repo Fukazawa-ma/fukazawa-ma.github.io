@@ -159,12 +159,35 @@ header {
 }
 .works-item__title {
     color: #1A3348;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     padding-bottom: 24px;
 }
-.works-item img {
+.works-item__img {
+    overflow: hidden;
+    position: relative;
+}
+.works-item__img img {
     width: 100%;
+    transition: transform .6s ease;
+}
+.works-item__img:hover img{
+    transform: scale(1.1);
+}
+.works-item__img::before {
+    background: rgba(0, 0, 0, .3);
+    content: "";
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .6s ease;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.works-item__img:hover::before {
+    opacity: 1;
 }
 #contact {
     background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
