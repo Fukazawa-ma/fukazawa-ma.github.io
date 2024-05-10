@@ -65,18 +65,18 @@ header {
     background: #DDDEDF;
     border-radius: 26px;
     content: "";
-    height: 710px;
+    height: 105%;
     position: absolute;
     right: 54px;
     left: -12px;
     transform: rotate(3deg);
     top: -10px;
-    width: 1017px;
+    width: 105%;
     z-index: -1;
 }
 .about-card__title {
     font-family: "Lato";
-    font-size: 64px;
+    font-size: 48px;
     padding-top: 60px;
     text-align: center;
 }
@@ -89,24 +89,23 @@ header {
 }
 .about-card-content__profile {
     text-align: center;
+    width: 50%;
 }
 .about-card-content__profile--img {
     background: #FFF;
     border-radius: 50%;
-    height: 350px;
-    width: 350px;
 }
 .about-card-content__profile--img img {
     width: 100%;
 }
 .about-card-content__profile p {
     font-family: "Lato";
-    font-size: 32px;
+    font-size: 28px;
     padding-top: 36px;
 }
 .about-card-content__text {
     font-size: 25px;
-    max-width: 450px;
+    width: 50%;
     line-height: 40px;
 }
 #skills {
@@ -116,7 +115,7 @@ header {
 .skills-title {
     color: #1A3348;
     font-family: "Lato";
-    font-size: 64px;
+    font-size: 48px;
     padding-top: 52px;
     text-align: center;
 }
@@ -125,14 +124,20 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
-    gap: 100px;
     padding-top: 108px;
     max-width: 750px;
     margin: 0 auto;
 }
 .skills-item {
     height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    width: calc(100% /3 - 50px);
+}
+.skills-item img {
+    height: auto;
     width: 120px;
+
 }
 #works {
     padding-bottom: 110px;
@@ -140,7 +145,7 @@ header {
 .works-title {
     color: #1A3348;
     font-family: "Lato";
-    font-size: 64px;
+    font-size: 48px;
     padding-top: 52px;
     text-align: center;
 }
@@ -148,14 +153,14 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-    gap: 32px;
+    gap: 50px;
     padding-top: 108px;
     max-width: 1040px;
     margin: 0 auto;
 }
 .works-item {
     padding-bottom: 50px;
-    width: calc(50% - 32px);
+    width: calc(50% - 80px);
 }
 .works-item__title {
     color: #1A3348;
@@ -196,7 +201,7 @@ header {
 .contact-title {
     color: #1A3348;
     font-family: "Lato";
-    font-size: 64px;
+    font-size: 48px;
     padding-top: 52px;
     text-align: center;
 }
@@ -207,7 +212,7 @@ header {
     padding-top: 65px;
 }
 .contact-item {
-    background-color: #00508A;
+    background: #00508A;
     border-radius: 10px;
     color: #FFF;
     display: block;
@@ -217,6 +222,13 @@ header {
     position: relative;
     text-align: center;
     width: 325px;
+}
+.contact-item:hover {
+    background: #213547;
+}
+.contact-item:hover.arrow::after {
+    border-top: 3px solid #213547;
+    border-right: 3px solid #213547;
 }
 .arrow::before {
     background: #FFF;
@@ -285,4 +297,59 @@ header {
     font-size: 18px;
     text-align: center;
     padding: 12px;
+}
+@media screen and (max-width:1200px) {
+    .about-card {
+        width: 770px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .about-card {
+        width: 620px;
+    }
+    .about-card-content {
+        flex-direction: column;
+    }
+    .skills-item-container {
+        width: 650px;
+    }
+
+    .works-item__title {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:767px) {
+    #about {
+        padding: 0;
+    }
+   .about-card {
+    border-radius: 0;
+    width: 100%;
+   }
+   .about-card::after {
+    display: none;
+   }
+   .about-card-content__profile {
+    width: 60%;
+   }
+   .about-card-content__text {
+    width: 100%;
+   }
+   .skills-item-container {
+    width: 100%;
+    padding: 108px 20px 0;
+}
+   .skills-item {
+    width: 50%;
+   }
+   .skills-item img {
+    width: 80px;
+   }
+   .works-item-container {
+    flex-direction: column;
+    padding: 108px 70px 0;
+   }
+   .works-item {
+     width: 100%;
+   }
 }
