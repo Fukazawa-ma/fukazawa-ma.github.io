@@ -119,6 +119,7 @@ header {
     gap: 50px;
     left: 50%;
     position: absolute;
+    text-align: center;
     transform: translate(-50%,-50%);
     top: 50%;
 }
@@ -208,7 +209,7 @@ header {
     padding-top: 36px;
 }
 .about-card-content__text {
-    font-size: 25px;
+    font-size: 22px;
     width: 50%;
     line-height: 40px;
 }
@@ -297,6 +298,9 @@ header {
 }
 .works-item__img:hover::before {
     opacity: 1;
+}
+.works-item__pass {
+    font-size: 14px;
 }
 #contact {
     background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
@@ -402,6 +406,9 @@ header {
     text-align: center;
     padding: 12px;
 }
+.br-sp {
+    display: none;
+}
 @media screen and (max-width:1200px) {
     .about-card {
         width: 770px;
@@ -417,6 +424,9 @@ header {
     .about-card-content {
         flex-direction: column;
     }
+    .about-card-content__text {
+        width: 100%;
+       }
     .skills-item-container {
         width: 650px;
     }
@@ -424,8 +434,10 @@ header {
     .works-item__title {
         font-size: 18px;
     }
+    
 }
 @media screen and (max-width:767px) {
+    
     header {
         padding: 25px;
     }
@@ -454,9 +466,6 @@ header {
    .about-card-content__profile {
     width: 60%;
    }
-   .about-card-content__text {
-    width: 100%;
-   }
    .skills-item-container {
     width: 100%;
     padding: 108px 20px 0;
@@ -474,4 +483,9 @@ header {
    .works-item {
      width: 100%;
    }
+}
+@media screen and (max-width:480px) {
+    .works-item-container {
+        padding: 108px 20px 0;
+       }
 }
