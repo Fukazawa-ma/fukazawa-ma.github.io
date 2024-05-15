@@ -9,8 +9,12 @@ $('.hamburger').click(function(){
     $(this).toggleClass("active");
     $('#g-nav').toggleClass("navactive");
 })
+$('.g-nav-item a').click(function(){
+    $('.hamburger').removeClass("active");
+    $('#g-nav').removeClass("navactive");
+});
 
 $(window).on('load',function(){
-    $("#loader").delay(3500).fadeOut('slow');
-    $("#loading").delay(3500).fadeOut('slow');
+    $("#loader").delay(3000).fadeOut('slow');
+    $("#loading").delay(3000).fadeOut('slow');
   });
