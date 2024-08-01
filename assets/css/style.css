@@ -254,14 +254,24 @@ header {
     padding-top: 52px;
     text-align: center;
 }
+.works-web {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.works-web-title {
+    border-left: 5px solid #00508A;
+    background: #f4f4f4;
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 50px;
+    padding: 10px 50px 10px 30px;
+}
 .works-item-container {
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
     gap: 50px;
-    padding-top: 108px;
-    max-width: 1040px;
-    margin: 0 auto;
+    padding-top: 50px;
 }
 .works-item {
     padding-bottom: 50px;
@@ -302,6 +312,47 @@ header {
 .works-item__pass {
     font-size: 14px;
 }
+.works-app {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.works-app-title {
+    border-left: 5px solid #00508A;
+    background: #f4f4f4;
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+.works-app-item-container {
+    padding-top: 50px;
+}
+.works-app-item {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.works-app-item__title {
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+.works-app-item__infomation {
+    display: flex;
+}
+.works-app-item__infomation--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.works-app-item__infomation--description p {
+    font-size: 18px;
+}
+
+.works-app-item__infomation--img img {
+    border-radius: 25px;
+    width: 150px;
+}
+
 #contact {
     background: linear-gradient(90deg, rgba(168,202,240,1) 0%, rgba(233,240,250,1) 100%);
     padding-bottom: 118px;
@@ -413,6 +464,15 @@ header {
     .about-card {
         width: 770px;
     }
+    .works-web-title {
+        margin-left: 50px;
+    }
+    .works-app-title {
+        margin-left: 50px;
+    }
+    .works-app-item-container {
+        padding: 50px 50px 0 50px;
+    }
 }
 @media screen and (max-width:1024px) {
     header {
@@ -478,14 +538,32 @@ header {
    }
    .works-item-container {
     flex-direction: column;
-    padding: 108px 70px 0;
+    padding: 50px 70px 0;
    }
    .works-item {
      width: 100%;
    }
 }
 @media screen and (max-width:480px) {
+    .works-web-title {
+        margin-left: 20px;
+    }
+    .works-app-title {
+        margin-left: 20px;
+    }
     .works-item-container {
-        padding: 108px 20px 0;
+        padding: 50px 20px 0;
        }
+    .works-app-item__infomation--img img {
+        width: 120px;
+    }
+    .works-app-item__title {
+        font-size: 18px;
+    }
+    .works-app-item__infomation--description {
+        margin-left: 35px;
+    }
+    .works-app-item__infomation--description p {
+        font-size: 15px;
+    }
 }
